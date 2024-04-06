@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+            ETML
+            Auteur : Kathleen Lu
+            Date : 04.06.2023
+            Description : La page de statistiques du site de Peach Youth contenant :
+                            - une carte représentant les 10 pays d'où viennent le plus de Peach Youthers
+                            - un diagramme linéaire de la croissance des actions de Peach Youth
+                            - Un diagramme en secteur des catégories préférées des Peach Youthers
+        -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../../resources/css/styles.css" />
+    <title>Statistics | Peach Youth</title>
+  </head>
+  <body>
+    <nav id="mainNav">
+      <a href="home.html" class="logo">
+        <img
+          src="../../resources/images/logo/logo.png"
+          alt="logo de Peach Youth"
+        />
+      </a>
+
+      <ul class="navMenu">
+        <li class="navItem">
+          <a href="home.html" class="navLink">Home</a>
+        </li>
+        <li class="navItem">
+          <a href="catalogAll.html" class="navLink">Catalog</a>
+        </li>
+        <li class="navItem">
+          <a href="statistics.html" class="navLink">Statistics</a>
+        </li>
+        <li class="navItem">
+          <a href="contact.html" class="navLink">Contact</a>
+        </li>
+      </ul>
+
+      <div id="navRight">
+        <a href="error404.html">
+          <span class="material-symbols-rounded like">favorite</span>
+        </a>
+
+        <button class="hamburgerBtn" aria-label="Mobile Navigation Button">
+          <span class="material-symbols-rounded">menu</span>
+        </button>
+      </div>
+      <div class="toggleSeparation"></div>
+    </nav>
+
+    <header id="simpleHeader">
+      <section id="simpleHero">
+        <h1>Some numbers about us</h1>
+        <p class="heroParagraph">
+          Curious about us? Here are the numbers you didn’t ask for. Enjoy!
+        </p>
+      </section>
+    </header>
+
+    <main>
+      <section id="statistic1">
+        <div class="statContainer">
+          <h2>Where are the Peach Youthers?</h2>
+          <div class="statContent">
+            <img
+              class="statImg"
+              src="../../userContent/statistics/worldMap.jpg"
+              alt="a world map with the 10 biggest contribuing counties of Peach Youthers"
+            />
+            <section class="statText">
+              <h3>Where do most of our customers buy from?</h3>
+              <p>
+                These are no statistics. But if you were wondering where our
+                community is, here is a map with the 10 biggest contributing
+                countries where our Peach Youthers buy from. Is your country on
+                the map?
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="statistic2">
+        <div class="statContainer">
+          <h2>We are thriving</h2>
+          <div class="statContent">
+            <img
+              class="statImg"
+              src="../../userContent/statistics/stocks.jpg"
+              alt="a linear diagram of the growth of Peach Youth's stocks"
+            />
+            <section class="statText">
+              <h3>Wanna invest in our company?</h3>
+              <p>
+                Here is the growth of our stocks over the last 10 months. Do you
+                like our products? Invest in them today!
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="statistic3">
+        <div class="statContainer">
+          <h2>Your favourites</h2>
+          <div class="statContent">
+            <img
+              class="statImg"
+              src="../../userContent/statistics/favouriteCategories.jpg"
+              alt="a sector diagram of the different favourite categories of Peach Youthers"
+            />
+            <section class="statText">
+              <h3>Which products are important for Peach Youthers?</h3>
+              <p>
+                Are you lacking ideas for what kind of product to buy next? Here
+                you can see which category of product makes the most sales. From
+                which category do you buy the most?
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footerMain">
+        <section id="info">
+          <h2>Peach Youth</h2>
+          <a href="mailto:info@peachyouth.ch">info@peachyouth.ch</a>
+          <div id="social">
+            <a href="error404.html"><i class="bi bi-facebook"></i></a>
+            <a href="error404.html"><i class="bi bi-twitter"></i></a>
+            <a href="error404.html"><i class="bi bi-instagram"></i></a>
+            <a href="error404.html"><i class="bi bi-youtube"></i></a>
+            <a href="error404.html"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </section>
+
+        <nav id="footerNav">
+          <ul>
+            <li class="nav-item">
+              <a href="home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="catalogAll.html" class="nav-link">Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a href="statistics.html" class="nav-link">Statistics</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section id="newsletter">
+          <h3>Subscribe to our newsletter for updates and discounts</h3>
+          <form>
+            <input type="email" placeholder="Enter your e-mail" />
+            <input type="submit" value="Subscribe" class="subscribe" />
+          </form>
+        </section>
+      </div>
+
+      <div id="footerSeparation"></div>
+      <div id="bottom">
+        <p><span>© 2023 Peach Youth. </span><span>All rights reserved</span></p>
+        <a href="#">Back to top</a>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

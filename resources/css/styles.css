@@ -1,0 +1,1419 @@
+/**
+* ETML
+* Auteur : Kathleen Lu
+* Date : 03.05.2023
+* Description : Feuille de style pour le layout du site de Peach Youth
+**/
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Home page - Global styles
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#mainNav,
+#hero,
+#categories,
+#bestsellers,
+#banner,
+#new,
+#quote p,
+#about,
+#footerMain,
+#filter,
+.category,
+.statContainer,
+#simpleHero,
+#catalogHero,
+#presentation,
+#contactMe form,
+#errorContainer {
+    width: 334px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #FFF1E5;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#mainNav a:hover,
+footer a:hover,
+#presentation a:hover {
+    text-decoration: underline;
+}
+
+#mainNav:visited,
+#categories a:visited {
+    color: black;
+}
+
+img {
+    object-fit: cover;
+}
+
+.buttonGeneral {
+    padding: 12px 24px;
+    background-color: #1A0C00;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 32px 0;
+}
+
+.buttonGeneral:hover {
+    color: #FFC999;
+}
+
+.like {
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    color: #CCCCCC;
+}
+
+/* %%%%%%%%%% Text styles %%%%%%%%%% */
+h1 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#quote p {
+    font-family: 'Baskervville', serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* %%%%%%%%%% Icons styles %%%%%%%%%% */
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Nav styles
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+#mainNav {
+    min-height: 120px;
+    margin: 0 auto;
+    padding: 44px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navMenu {
+    order: 3;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+    text-transform: uppercase;
+}
+
+.navMenu a {
+    display: block;
+    padding: 15px 8px;
+}
+
+#navRight {
+    order: 1;
+    width: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggleSeparation {
+    order: 2;
+    margin: 44px 0;
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #999999;
+    display: none;
+}
+
+.logo img {
+    height: 44px;
+}
+
+.navItem {
+    width: 100%;
+    text-align: center;
+}
+
+.active {
+    display: block;
+}
+
+.hamburgerBtn {
+    padding: 0 10px;
+    background-color: transparent;
+    border: none;
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Header styles
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+#homeheader {
+    height: 786px;
+}
+
+#hero {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero p,
+#hero a {
+    display: inline-block; /* Recheck */
+    margin-top: 24px;
+}
+
+.hideInMobile {
+    display: none;
+}
+
+.introImg {
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 150px;
+}
+
+#simpleHeader {
+    height: 480px;
+}
+
+#simpleHero {
+    padding-top: 96px;
+}
+
+#catalogHero {
+    padding-top: 40px;
+}
+
+#catalogNav,
+#catalogNav a {
+    text-transform: uppercase;
+    color: #666666;
+}
+
+#catalogNav a:last-of-type {
+    color: black;
+}
+
+#catalogHeroText {
+    margin-top: 64px;
+}
+
+.heroParagraph {
+    margin-top: 24px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Main styles
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+main {
+    background-color: #F7F9FA;
+}
+
+#categories,
+#bestsellers,
+#new,
+#about,
+.category,
+#presentation,
+#contactMe {
+    padding-top: 80px;
+}
+
+.lastContainer,
+#presentation {
+    padding-bottom: 80px;
+}
+
+.categoriesContainer,
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#filter {
+    padding-top: 40px;
+}
+
+#filter ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 8px;
+}
+
+#filter a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FFE4CC;
+    border-radius: 100px;
+}
+
+#filter .currentFilter {
+    background-color: #1A0C00;
+    color: white;
+}
+
+/* %%%%%%%%%% Categories %%%%%%%%%% */
+.categoriesContainer {
+    gap: 16px 24px;
+}
+
+.bigCategory,
+.smallCategory {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.bigCategory {
+    flex-basis: 100%;
+}
+
+.bigCategory:first-of-type {
+    margin-top: 0;
+}
+
+.smallCategory {
+    width: 155px;
+}
+
+#categories a {
+    margin: 0 auto;
+    padding: 11px 0;
+    height: fit-content;
+    width: 132px;
+    background-color: white;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 2rem;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#categories a:hover {
+    background-color: #FFE4CC;
+}
+
+#categories img {
+    margin-top: 22px;
+    width: 100%;
+    height: 155px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.bigCategory:first-of-type img {
+    border-top-left-radius: 80px;
+}
+
+.bigCategory:last-of-type img {
+    border-bottom-right-radius: 80px;
+}
+
+/* %%%%%%%%%% Section with products %%%%%%%%%% */
+.container {
+    gap: 32px 24px;
+}
+
+.product {
+    width: 155px;
+}
+
+.product img {
+    width: 100%;
+    height: 212px;
+}
+
+.productDescription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #999999;
+    font-size: 12px;
+}
+
+.productName {
+    font-weight: 600;
+}
+
+.price {
+    margin-top: 8px;
+}
+
+/* %%%%%%%%%% Banner %%%%%%%%%% */
+#banner {
+    margin-top: 80px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* %%%%%%%%%% Quote %%%%%%%%%% */
+#quote {
+    margin-top: 80px;
+    padding: 100px 0;
+    background-color: #FFC999;
+}
+
+/* %%%%%%%%%% About %%%%%%%%%% */
+
+#about1 img {
+    width: 100%;
+    height: 334px;
+    border-top-left-radius: 100px;
+}
+
+#about2Text {
+    margin-top: 40px;
+}
+
+#about2Text p {
+    margin-top: 8px;
+}
+
+#about2Img {
+    margin-top: 40px;
+    height: 155px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about2Img img {
+    height: 100%;
+    width: 155px;
+}
+
+#about2Img img:last-of-type {
+    border-bottom-right-radius: 80px;
+}
+
+/*********************************** Statistics page ***********************************/
+#statistic2 {
+    background-color: #FFF1E5;
+}
+
+.statContainer {
+    padding: 80px 0;
+}
+
+.statContainer h2 {
+    text-align: left;
+    text-transform: initial;
+}
+
+.statContainer h3 {
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.statContainer p {
+    margin-top: 8px;
+}
+
+.statImg {
+    width: 100%;
+}
+
+/*********************************** Contact page ***********************************/
+.paragraph {
+    margin-top: 16px;
+}
+
+#presentation h2 {
+    text-transform: initial;
+}
+
+#presentation img {
+    border-radius: 150px 0;
+}
+
+#contactMe {
+    background-color: #FFE4CC;
+    padding-bottom: 80px;
+}
+
+#contactMe form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+#contactMe input[type=submit] {
+    align-self: flex-end;
+    padding: 16px 40px;
+    width: fit-content;
+}
+
+#contactMe input[type=text],
+#contactMe input[type=email],
+#contactMe textarea {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    padding: 11px 16px;
+}
+
+.contactBox {
+    display: flex;
+    flex-direction: column;
+}
+
+::placeholder {
+    color: #999999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Error 404 page styles
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+#errorPage {
+    background-color: #FFF1E5;
+}
+
+#errorContainer {
+    padding: 120px 0;
+}
+
+#error404 h1 {
+    height: 174px;
+    font-size: 128px;
+    display: flex;
+}
+
+#error404 h1 span {
+    align-self: flex-start;
+    margin-left: 12px;
+    font-size: 32px;
+}
+
+#error404 a {
+    display: inline-block;
+}
+
+#error404 p,
+#error404 a {
+    margin-top: 32px;
+}
+
+#errorPage img {
+    display: none;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Footer styles
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+footer {
+    padding: 80px 40px;
+    background-color: #1A0C00;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFC999;
+}
+
+footer a:visited {
+    color: white;
+}
+
+footer a:visited:hover {
+    color: #FFC999;
+}
+
+footer h2 {
+    margin-bottom: 24px;
+}
+
+#info,
+#footerNav {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info a {
+    padding: 11px 0;
+}
+
+#social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+#social a {
+    padding: 11px 14px;
+}
+
+#footerNav {
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#footerNav a {
+    display: inline-block;
+    padding: 11px 0;
+}
+
+#newsletter form {
+    margin-top: 24px;
+    display: flex;
+}
+
+#newsletter input[type=email] {
+    flex-grow: 1;
+    max-width: 375px;
+    padding: 10px 8px;
+}
+
+#newsletter input[type=email]:focus {
+    border-color: #FFC999;
+}
+
+#newsletter input[type=submit] {
+    margin-left: 12px;
+    padding: 11px 10px;
+    width: 112px;
+    background-color: white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-radius: 18px 0;
+}
+
+#newsletter input[type=submit]:hover {
+    background-color: #FFC999;
+}
+
+#footerSeparation {
+    margin-top: 80px;
+    height: 0;
+    border-top: 1px solid #999999;
+}
+
+#bottom {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottom p {
+    color: #999999;
+    display: flex;
+    flex-direction: column;
+}
+
+#bottom a {
+    padding-top: 14px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Media Queries
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/* %%%%%%%%%% Tablet view %%%%%%%%%% */
+@media screen and (min-width: 768px) {
+     /* Nav */
+    #mainNav {
+        width: calc(100% - 80px);
+    }
+
+     .navMenu {
+        order: 1;
+        width: 400px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navMenu li {
+        width: 88px;
+    }
+
+    .navMenu a {
+        display: inline;
+        padding: 11px 0;
+    }
+
+    #navRight {
+        width: fit-content;
+    }
+
+    .hamburgerBtn {
+        display: none;
+    }
+
+    .toggleSeparation {
+        display: none;
+    }
+}
+
+/* %%%%%%%%%% Small desktop view %%%%%%%%%% */
+@media screen and (min-width: 1024px) {
+    /* Global */
+    #mainNav,
+    #hero,
+    #categories,
+    #bestsellers,
+    #banner,
+    #new,
+    #quote p,
+    #about,
+    #footerMain,
+    #footerSeparation,
+    #bottom,
+    #filter,
+    .category,
+    .statContainer,
+    #errorContainer,
+    #simpleHero,
+    #catalogHero,
+    #presentation,
+    #contactMe form {
+        width: 864px;
+        margin: 0 auto;
+    }
+    
+    /* Nav */
+    .navMenu {
+        width: 515px;
+    }
+    
+    /* Header */
+    header {
+        height: fit-content;
+    }
+
+    #simpleHeader h1 {
+        font-size: 56px;
+    }
+    
+    #simpleHeader p {
+        max-width: 400px;
+    }
+    
+    #simpleHero {
+        padding-top: 120px;
+    }
+
+    #catalogHero {
+        padding-top: 48px;
+    }
+
+    /* HOME Header */
+    #hero h1 {
+        margin-top: 97px;
+        font-size: 56px;
+    }
+    
+    #hero {
+        padding: 50px 0;
+        flex-direction: row;
+        gap: 0 24px;
+    }
+    
+    #heroLeft,
+    .introImg {
+        width: 420px;
+    }
+
+    #heroLeft {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hero p,
+    #hero a {
+        margin-top: 16px;
+    }
+    
+    #heroLeft a {
+        width: 190px;
+        text-align: center;
+    }
+    
+    .hideInMobile {
+        width: 200px;
+        height: 200px;
+        display: initial;
+        border-radius: 0 80px;
+        align-self: flex-end;
+    }
+    
+    .introImg {
+        margin-top: 0;
+        height: 554px;
+        border-top-left-radius: 180px;
+    }
+
+    /* Main */
+    #categories,
+    #bestsellers,
+    #new,
+    #about,
+    .category {
+        padding-top: 160px;
+    }
+
+    .lastContainer {
+        padding-bottom: 160px;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    #filter {
+        padding-top: 80px;
+    }
+    
+    #filter ul {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: initial;
+        background-color: #FFE4CC;
+        border-radius: 100px;
+    }
+
+    #filter a {
+        width: 120px;
+        height: 60px;
+        padding: 0;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #filter .lastFilter {
+        width: 144px;
+    }
+
+    /* HOME Categories */
+    #categories a {
+        width: fit-content;
+        padding: 12px 24px;
+    }
+
+    #categories img {
+        height: 198px;
+    }
+
+    .categoriesContainer {
+        gap: 40px 24px;
+    }
+
+    .bigCategory {
+        flex-basis: auto;
+        width: 420px;
+    }
+
+    .bigCategory:first-of-type img {
+        border-top-left-radius: 100px;
+    }
+    
+    .bigCategory:last-of-type img {
+        border-bottom-right-radius: 100px;
+    }
+
+    .smallCategory {
+        width: 198px;
+    }
+
+    /* Section with products */
+    .container {
+        gap: 40px 24px;
+    }
+
+    .product {
+        width: 198px;
+    }
+
+    .product img {
+        height: 270px;
+    }
+
+    .productDescription {
+        margin-top: 8px;
+    }
+
+    .brand {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .productName,
+    .price {
+        font-size: 20px;
+    }
+    
+    .productName {
+        font-weight: 700;
+    }
+    
+    .price {
+        margin-top: 16px;
+    }
+
+    /* HOME Banner */
+    #banner {
+        margin-top: 160px;
+        font-size: 18px;
+    }
+
+    #banner span {
+        margin: 0 8px;
+    }
+
+    /* HOME Quote */
+    #quote {
+        margin-top: 160px;
+        padding: 140px 0;
+    }
+
+    #quote p {
+        padding: 0 60px;
+        font-size: 40px;
+    }
+
+    /* HOME About */
+    #about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #about h2 {
+        flex-basis: 100%;
+    }
+
+    #about1 img {
+        width: 420px;
+        height: 420px;
+        border-top-left-radius: 160px;
+    }
+
+    #about2 {
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #about2Img {
+        order: 1;
+        margin: 0;
+        height: 198px;
+    }
+
+    #about2Img img {
+        width: 198px;
+    }
+
+    #about2Text {
+        order: 2;
+    }
+
+    #about2Text p {
+        max-width: 400px;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footerMain {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #info,
+    #footerNav {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    #info {
+        width: 272px;
+    }
+
+    #social {
+        margin-top: 16px;
+        margin-left: -14px;
+    }
+
+    #footerNav {
+        margin: 8px 0 0 0;
+        width: 198px;
+    }
+
+    #newsletter {
+        width: 346px;
+    }
+
+    #newsletter input[type=submit] {
+        margin-left: 14px;
+    }
+
+    #footerSeparation {
+        margin-top: 80px;
+    }
+
+    #bottom {
+        margin-top: 40px;
+    }
+
+    #bottom p {
+        display: block;
+    }
+
+    #bottom p,
+    #bottom a {
+        padding: 11px 0;
+    }
+
+    /* Statistics Page */    
+    .statContainer {
+        padding: 100px 0;
+    }
+    
+    .statContainer h3 {
+        margin-top: 0;
+    }
+    
+    .statContainer p {
+        margin-top: 16px;
+    }
+
+    .statContent {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .statImg {
+        max-width: 50%;
+    }
+
+    .statText {
+        align-self: center;
+        width: 370px;
+    }
+
+    .statText p {
+        max-width: 346px;
+    }
+
+    /* Contact Me Page*/
+    .paragraph {
+        margin-top: 24px;
+    }
+    
+    #presentation {
+        width: 716px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #presentationText {
+        width: 320px;
+        align-self: center;
+    }
+
+    #presentation img {
+        width: 346px;
+        height: 408px;
+    }
+    
+    #contactMe h2 {
+        text-align: center;
+    }
+
+    #contactMe form {
+        width: 494px;
+    }
+    
+    #yourName {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .contactBox {
+        flex-grow: 1;
+    }
+
+    /* ERROR 404 */
+    #errorContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #errorPage img {
+        display: initial;
+        height: 500px;
+        width: 540px;
+        border-top-left-radius: 200px;
+        object-fit: cover;
+        object-position: 0 70%;
+    }
+
+    #error404 {
+        width: 296px;
+    }
+
+    #error404 h1 {
+        margin-top: 100px;
+        height: 140px;
+        font-size: 112px;
+    }
+
+    #error404 h1 span {
+        font-size: 24px;
+    }
+}
+
+/* %%%%%%%%%% Big desktop view %%%%%%%%%% */
+@media screen and (min-width: 1366px) {
+    /* Global */
+    #mainNav,
+    #hero,
+    #categories,
+    #bestsellers,
+    #banner,
+    #new,
+    #quote p,
+    #about,
+    #footerMain,
+    #footerSeparation,
+    #bottom,
+    #filter,
+    .category,
+    .statContainer,
+    #errorContainer,
+    #simpleHero,
+    #catalogHero {
+        width: 1240px;
+        margin: 0 auto;
+    }
+
+    .buttonGeneral {
+        padding: 16px 40px;
+    }
+
+    /* Header */
+    #simpleHeader h1 {
+        font-size: 64px
+    }
+
+    #catalogHero {
+        padding-top: 64px;
+    }
+    
+    #catalogHeroText {
+        margin-top: 56px;
+    }
+
+    #homeHeader h1 {
+        margin-top: 97px;
+        font-size: 72px;
+    }
+    
+    #heroLeft,
+    .introImg {
+        width: 608px;
+    }
+
+    #heroLeft p {
+        font-size: 24px;
+    }
+    
+    .hideInMobile {
+        width: 292px;
+        height: 292px;
+        border-radius: 0 100px;
+    }
+    
+    .introImg {
+        height: 708px;
+        border-top-left-radius: 240px;
+    }
+
+    /* Main */
+    h2 {
+        font-size: 40px;
+    }
+
+    #filter a {
+        width: 169px;
+        height: 80px;
+        font-size: 20px;
+    }
+
+    #filter .lastFilter {
+        width: 225px;
+    }
+
+    /* Categories */
+    #categories a {
+        font-size: 20px;
+        padding: 16px 40px;
+    }
+
+    #categories img {
+        height: 292px;
+    }
+
+    .bigCategory {
+        width: 608px;
+    }
+
+    .smallCategory {
+        width: 292px;
+    }
+
+    /* Section with products */
+    .product {
+        width: 292px;
+    }
+
+    .product img {
+        height: 400px;
+    }
+
+    .brand {
+        font-weight: 700;
+    }
+    
+    .productName {
+        margin-top: 8px;
+    }
+    
+    .price {
+        margin-top: 24px;
+    }
+
+    /* Banner */
+    #banner {
+        margin-top: 160px;
+        font-size: 24px;
+    }
+
+    #banner span {
+        margin: 0 16px;
+    }
+
+    /* Quote */
+    #quote {
+        padding: 180px 0;
+    }
+
+    #quote p {
+        padding: 0 160px;
+        font-size: 48px;
+    }
+
+    /* About */
+    #about1 img {
+        width: 608px;
+        height: 608px;
+        border-top-left-radius: 200px;
+    }
+
+    #about2 {
+        width: 608px;
+    }
+
+    #about2Img {
+        height: 292px;
+    }
+
+    #about2Img img {
+        width: 292px;
+    }
+
+    #about2Text p {
+        margin-top: 16px;
+    }
+
+    /* Footer */
+    #info {
+        width: 400px;
+    }
+
+    #footerNav {
+        width: 294px;
+    }
+
+    #newsletter {
+        width: 556px;
+    }
+
+    #newsletter input[type=submit] {
+        margin-left: 16px;
+    }
+
+    #footerSeparation {
+        margin-top: 80px;
+    }
+
+    #bottom {
+        margin-top: 40px;
+    }
+
+    #bottom p {
+        display: block;
+    }
+
+    #bottom p,
+    #bottom a {
+        padding: 11px 0;
+    }
+
+    /* Statistics Page */    
+    .statContainer {
+        padding: 120px 0;
+    }
+    
+    .statImg {
+        max-width: 55%;
+    }
+
+    .statText {
+        width: 440px;
+    }
+
+    .statText p {
+        max-width: 400px;
+    }
+
+    /* Contact Me Page*/
+    .paragraph {
+        margin-top: 40px;
+    }
+
+    #presentation {
+        width: 1030px;
+    }
+
+    #presentationText {
+        width: 397px;
+    }
+
+    #presentation img {
+        width: 503px;
+        height: 595px;
+        border-radius: 200px 0;
+    }
+
+    #contactMe form {
+        width: 608px;
+    }
+
+    .contactBox {
+        flex-grow: 1;
+    }
+
+    /* ERROR 404 */
+    #errorPage img {
+        height: 680px;
+        width: 740px;
+        border-top-left-radius: 300px;
+    }
+
+    #error404 {
+        width: 415px;
+    }
+
+    #error404 h1 {
+        margin-top: 120px;
+        height: 174px;
+        font-size: 128px;
+    }
+
+    #error404 h1 span {
+        font-size: 32px;
+    }
+
+    #error404 p {
+        font-size: 24px;
+    }
+}
