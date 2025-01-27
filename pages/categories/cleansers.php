@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <!-- 
-            ETML
             Auteur : Kathleen Lu
             Date : 04.06.2023
             Description : La page de catalogue des produits nettoyants du site de Peach Youth contenant :
